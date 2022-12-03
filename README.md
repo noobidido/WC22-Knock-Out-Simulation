@@ -10,4 +10,4 @@ I will also try to make a prediction. Actually not a prediction, but I would lik
 
 The actual simulation is based on [Lab6 of Harvard's CS50](https://cs50.harvard.edu/x/2022/labs/6/). It is the sole back-bone of the simulation program(tournament.py), and we will be adding other utilities on top of that to make our quest better.
 
-##How the simulation works
+## How the simulation works
