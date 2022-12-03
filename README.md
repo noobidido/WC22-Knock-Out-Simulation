@@ -1,1 +1,1 @@
-# WC22-Knock-Out-Simulation
+# WC22 Knock-Out Simulation
