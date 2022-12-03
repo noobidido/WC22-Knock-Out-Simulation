@@ -12,3 +12,5 @@ The actual simulation is based on [Lab6 of Harvard's CS50](https://cs50.harvard.
 
 ## How the simulation works
 In any football game there are two teams. Either both of them are of equal strength, any one of them can win, or one is better and stronger than the other. In that case the strong team will likely win. There is no gurantee of something happening in this reasoning. In any single meeting any one of them can win. But given enough matches, the stronger team will come out ahead. This way we can see who has the best chance of winning the tournament.
+
+Now how do we know which team is stronger and which team is relatively weaker? A valid matric is the FIFA rating of these countries. The higher the FIFA rating, the higher the chance of that team winning. 
