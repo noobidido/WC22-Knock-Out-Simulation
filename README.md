@@ -11,3 +11,4 @@ I will also try to make a prediction. Actually not a prediction, but I would lik
 The actual simulation is based on [Lab6 of Harvard's CS50](https://cs50.harvard.edu/x/2022/labs/6/). It is the sole back-bone of the simulation program(tournament.py), and we will be adding other utilities on top of that to make our quest better.
 
 ## How the simulation works
+In any football game there are two teams. Either both of them are of equal strength, any one of them can win, or one is better and stronger than the other. In that case the strong team will likely win. There is no gurantee of something happening in this reasoning. In any single meeting any one of them can win. But given enough matches, the stronger team will come out ahead. This way we can see who has the best chance of winning the tournament.
