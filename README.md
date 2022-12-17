@@ -17,6 +17,6 @@ Now how do we know which team is stronger and which team is relatively weaker? A
 
 In fact we use the following formula to calculate the expected win of $1^{st}$ team over the $2^{nd}$ team:
 
-$$\frac{1}{1 + 10^\{R_{2} - R_{1}}}$$
+# $$\frac{1}{1 + 10^\{R_{2} - R_{1}}}$$
 
 ### Collecting Rating points
