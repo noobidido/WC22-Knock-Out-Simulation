@@ -20,7 +20,7 @@ In fact we use the following formula to calculate the expected win of $1^{st}$ t
 # $$\frac{1}{1 + 10^\{R_{2} - R_{1}}}$$
 
 
-Now, that we have a better understanding of how to make the simulation, let's start working by
+Now, that we have a better understanding of how to make the simulation, let's start working by:
 
 ### Collecting Rating points
 This project was done in a night. So the code is probably not written in the best of ways. Also, I did not make the code super reusable. Instead of taking a list of World Cup winning teams and their ratings from a website, I hard coded their name and rating points in a text file. I went through all the 32 teams across 8 groups to get their FIFA ratings. I figured it'll be easier and faster than automating the process for a single use. 
