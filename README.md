@@ -10,7 +10,7 @@ I will also try to make a prediction. Actually not a prediction, but I would lik
 
 The actual simulation is based on [Lab6 of Harvard's CS50](https://cs50.harvard.edu/x/2022/labs/6/). It is the sole back-bone of the simulation program(tournament.py), and we will be adding other utilities on top of that to make our quest better.
 
-## How the simulation works
+## How the Simulation Works
 In any football game there are two teams. Either both of them are of equal strength, any one of them can win, or one is better and stronger than the other. In that case the strong team will likely win. There is no gurantee of something happening in this reasoning. In any single meeting any one of them can win. But given enough matches, the stronger team will come out ahead. This way we can see who has the best chance of winning the tournament.
 
 Now how do we know which team is stronger and which team is relatively weaker? A valid matric is the FIFA rating of these countries. The higher the FIFA rating, the higher the chance of that team winning. 
@@ -18,6 +18,9 @@ Now how do we know which team is stronger and which team is relatively weaker? A
 In fact we use the following formula to calculate the expected win of $1^{st}$ team over the $2^{nd}$ team:
 
 # $$\frac{1}{1 + 10^\{R_{2} - R_{1}}}$$
+
+
+Now, that we have a better understanding of how to make the simulation, let's start working by
 
 ### Collecting Rating points
 This project was done in a night. So the code is probably not written in the best of ways. Also, I did not make the code super reusable. Instead of taking a list of World Cup winning teams and their ratings from a website, I hard coded their name and rating points in a text file. I went through all the 32 teams across 8 groups to get their FIFA ratings. I figured it'll be easier and faster than automating the process for a single use. 
