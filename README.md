@@ -18,7 +18,7 @@ How do we know which team is stronger and which is relatively weaker? A valid me
 
 In fact, we use the following formula to calculate the expected win of $1^{st}$ team over the $2^{nd}$ team:
 
-# $$\frac{1}{1 + 10^\{R_{2} - R_{1}}}$$
+### $$\frac{1}{1 + 10^\{R_{2} - R_{1}}}$$
 
 
 Now that we have a better understanding of how to make the simulation, let's start working by:
