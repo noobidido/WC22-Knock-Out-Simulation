@@ -23,6 +23,9 @@ In fact we use the following formula to calculate the expected win of $1^{st}$ t
 Now, that we have a better understanding of how to make the simulation, let's start working by:
 
 ### Collecting Rating points
-This project was done in a night. So the code is probably not written in the best of ways. Also, I did not make the code super reusable. Instead of taking a list of World Cup winning teams and their ratings from a website, I hard coded their name and rating points in a text file. I went through all the 32 teams across 8 groups to get their FIFA ratings. I figured it'll be easier and faster than automating the process for a single use. 
+This project was done in a night. So the code is probably not written in the best of ways. Also, I did not make the code super reusable. Instead of taking a list of World Cup winning teams and their ratings from a website, I hard coded their name and rating points in a text file. Then I imported these data in my program from that file. I went through all the 32 teams across 8 groups to get their FIFA ratings. I figured it'll be easier and faster than automating the process for a single use. So, if I ever want to use the program again for other tournaments, I'll have to retrieve data manually again.
 
 ### Updating Ratings after Group Stage
+FIFA publishes a rating before the world cup. And another one after the world cup. If we are to take the FIFA's rating for the knock-out stage, it does not consider the group-stage performance of the qualified teams. 
+
+This year's World Cup was one of the most thrilling tournament in the recent history. There was a lot of 'upsets' in the group stage. That's why I felt that teams that advanced from the group-stage should get a new rating before the knock-out. My reasoning behind this was to better capture the moral of these teams. As any team that beat a relatively strong team will be high on confidence and any team that lost to a relatively weak team will be down.
