@@ -27,9 +27,16 @@ This project was done in a night. So the code is probably not written in the bes
 
 ### Updating Ratings after Group Stage
 FIFA publishes a rating before the world cup. And another one after the world cup. If we are to take the FIFA's rating for the knock-out stage, it does not consider the group-stage performance of the qualified teams. So, if a country played really well in the group-stage, or were horrible in the group-stage, it will not affect their performance in the simulation. Which is not true in the real world. 
+
 Also, this year's World Cup was one of the most thrilling tournament in the recent history. There was a lot of 'upsets' in the group stage. That's why I felt that teams that advanced from the group-stage should get a new rating before the knock-out. My reasoning behind this was to better capture the moral of these teams. As any team that beat a relatively strong team will be high on confidence and any team that lost to a relatively weak team will be down.
+
 That's why I updated the rating of these teams according to their group-stage matches. After every match, both teams' rating would update and after all three matches they will get a final rating. One thing that's worth mentioning is that, I only used the group-stage matches to update their rating and did not take into account the FIFA friendlies and warm-up matches. 
+
 So, did it had any effect? Well, here's how teams' rating changed after the group-stage:
+
+
 ![download (1)](https://user-images.githubusercontent.com/72381684/210505352-86cb700a-a435-46cb-97dd-f69c9a7aa0dd.png)
+
+
 Both Brazil and Spain lost rating because of their lose against Cameroon and Japan respectively. While Morocco had the biggest leap with their win against Belgium and Canada and a draw against Croatia. 
 
