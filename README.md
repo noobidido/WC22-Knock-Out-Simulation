@@ -30,13 +30,42 @@ FIFA publishes a rating before the world cup. And another one after the world cu
 
 Also, this year's World Cup was one of the most thrilling tournament in the recent history. There was a lot of 'upsets' in the group stage. That's why I felt that teams that advanced from the group-stage should get a new rating before the knock-out. My reasoning behind this was to better capture the moral of these teams. As any team that beat a relatively strong team will be high on confidence and any team that lost to a relatively weak team will be down.
 
-That's why I updated the rating of these teams according to their group-stage matches. After every match, both teams' rating would update and after all three matches they will get a final rating. One thing that's worth mentioning is that, I only used the group-stage matches to update their rating and did not take into account the FIFA friendlies and warm-up matches. 
+That's why I updated the rating of these teams according to their group-stage matches. After every match, both teams' rating would update and after all three matches they will get a final rating. One thing that's worth mentioning is that, I only used the group-stage matches to update their rating and did not take into account the FIFA friendlies and warm-up matches.
 
-So, did it had any effect? Well, here's how teams' rating changed after the group-stage:
+Just before the Russia World Cup, FIFA switched to a new rating system. According to [wikipedia](https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking) they now uses the following rules to calculate the rating after every game.
+
+![FIFA Rating Rules](https://user-images.githubusercontent.com/72381684/210513257-5541d33c-a112-4633-a413-ac0a413c4d75.png)
+
+Keeping these in mind, we can simpify our equation as:
+
+### $$Rating_{new} = Rating_{old} + 50 \times G \times (W - W_{e})$$
 
 
-![download (1)](https://user-images.githubusercontent.com/72381684/210505352-86cb700a-a435-46cb-97dd-f69c9a7aa0dd.png)
+So, did all these trouble had any effect? Well, here's how teams' rating changed after the group-stage:
 
 
-Both Brazil and Spain lost rating because of their lose against Cameroon and Japan respectively. While Morocco had the biggest leap with their win against Belgium and Canada and a draw against Croatia. 
+![Rating Change after the Group-Stage](https://user-images.githubusercontent.com/72381684/210505352-86cb700a-a435-46cb-97dd-f69c9a7aa0dd.png)
 
+
+Both Brazil and Spain lost rating because of their loss against Cameroon and Japan respectively. While Morocco had the biggest leap with their win against Belgium and Canada and a draw against Croatia. 
+
+
+
+Now we have everything to run our simulation.
+
+We input the bracket for the knockout and set N = 14000605, the number of runs. In every run, we keep track of the winner of the tournament. And eventually we get a likelihood of each team winning the world cup. Here's what we got:
+
+![Winning %](https://user-images.githubusercontent.com/72381684/210518677-5efd0493-9ea5-4a69-bf05-3cec7e04b743.png)
+
+
+# Comments about the world cup and the simulation
+We already know the result of the 2022 Qatar World Cup. Argentina, after 36 long years, finally won the world cup. This campaign has already taken its place in the footballing fairy-tale. Arguably the Greatest Of All Time winning the Greatest Achievement in Football. 
+According to our simulation, Argentina was 2nd-most-likely to win the World Cup, only behind Brazil, who unfortunately got knocked-out in a penalty-shootout from the Quarterfinals. 
+
+![image](https://user-images.githubusercontent.com/72381684/210535655-d2b04114-d0ef-4a74-8f17-1cb6f4988b30.png)
+
+
+# Final thoughts
+7 of the 8 top teams in our simulation qualified for the quarterfinals, with Morocco being the exception, who were the Dark Horse of this tournament. But as my simulation only kept the track of only tournament wins, we can't tell how accurately the simulation predicts other teams elimination in different stages.
+
+Also, it was a pretty basic simulation. It simply assumed that a team with higher-ranking has a better chance of winning. Which is true, but it is not the only factor. There's so many other aspects of the game that this game-simulator doesn't consider. A better game-simulator that considers more factors, it probably would have made the tournament-simulator also better. We could have used some statistical distributions, consider team's football style, attacking play, defensive strategy, squad, coaching stuff, you simply name it. But whatever we do, it will be impossible to predict the result with certainty. Even after considering 100 variables, there will always be some intangible factors for a team's success. We can only make our best guesses.
